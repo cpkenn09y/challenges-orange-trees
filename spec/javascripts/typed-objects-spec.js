@@ -40,8 +40,8 @@ describe ("Create an apple tree Object", function() {
   });
 
   describe ("die",function(){
-    xit("should die when age > MAX_AGE",function(){
-      var tree=createTree();
+    it("should die when age > MAX_AGE",function(){
+      var tree = new AppleTree;
       while(tree.age < MAX_AGE){
         tree.grow();
       }

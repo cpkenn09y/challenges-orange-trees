@@ -8,13 +8,13 @@
 
 // myFather=new person("John");
 
-FRUIT_BEARING_AGE = 13
+FRUIT_BEARING_AGE = 13;
 
 var AppleTree = function() {
   console.log(this);
   // this.age = 0;
   this.height = 0;
-
+  this.isAlive = true
   // grow = function() {
 
   // }
@@ -29,4 +29,13 @@ AppleTree.prototype.grow = function() {
   if (this.age > FRUIT_BEARING_AGE) {
     this.appleCount += Math.ceil(10 * Math.random());
   }
+  // if (this.age > MAX_AGE) {
+  //   this.isAlive = false;
+  // }
 };
+
+function testPrint() {
+  var tree = new AppleTree;
+  tree.grow();
+  console.log("OUR TREE IS NOW " + tree.age + " YEARS OLD")
+}

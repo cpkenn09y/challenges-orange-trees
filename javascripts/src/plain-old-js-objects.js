@@ -32,3 +32,10 @@ function createOrange() {
   orange.diameter = Math.ceil(5*Math.random());
   return orange;
 }
+
+function testPrint() {
+  console.log("WHOAAAAAAAAA PRINTED")
+}
+
+// var clicked_event = document.ElementById("plant-tree");
+//   console.log(clicked_event);
